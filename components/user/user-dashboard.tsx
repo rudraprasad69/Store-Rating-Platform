@@ -28,7 +28,7 @@ export function UserDashboard() {
             <Button
               variant="outline"
               onClick={logout}
-              className="flex items-center gap-2 bg-transparent interactive-btn dark:hover:bg-yellow-400"
+              className="flex items-center gap-2 bg-transparent interactive-btn"
             >
               <LogOut className="h-4 w-4" />
               Logout
@@ -41,19 +41,19 @@ export function UserDashboard() {
         {/* Navigation Tabs */}
         <Tabs defaultValue="dashboard" className="space-y-6">
           <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="dashboard" className="flex items-center gap-2 interactive-btn">
+            <TabsTrigger value="dashboard" className="flex items-center gap-2">
               <LayoutDashboard className="h-4 w-4" />
               Dashboard
             </TabsTrigger>
-            <TabsTrigger value="stores" className="flex items-center gap-2 interactive-btn">
+            <TabsTrigger value="stores" className="flex items-center gap-2">
               <Store className="h-4 w-4" />
               Browse Stores
             </TabsTrigger>
-            <TabsTrigger value="my-ratings" className="flex items-center gap-2 interactive-btn">
+            <TabsTrigger value="my-ratings" className="flex items-center gap-2">
               <Star className="h-4 w-4" />
               My Ratings
             </TabsTrigger>
-            <TabsTrigger value="profile" className="flex items-center gap-2 interactive-btn">
+            <TabsTrigger value="profile" className="flex items-center gap-2">
               <User className="h-4 w-4" />
               Profile
             </TabsTrigger>
@@ -68,7 +68,7 @@ export function UserDashboard() {
           </TabsContent>
 
           <TabsContent value="stores">
-            <Card className="card-hover">
+            <Card>
               <CardHeader>
                 <CardTitle>Browse Stores</CardTitle>
                 <CardDescription>Discover and rate stores in your area</CardDescription>
@@ -80,7 +80,7 @@ export function UserDashboard() {
           </TabsContent>
 
           <TabsContent value="my-ratings">
-            <Card className="card-hover">
+            <Card>
               <CardHeader>
                 <CardTitle>My Ratings</CardTitle>
                 <CardDescription>View and manage your store ratings</CardDescription>
@@ -92,7 +92,7 @@ export function UserDashboard() {
           </TabsContent>
 
           <TabsContent value="profile">
-            <Card className="card-hover">
+            <Card>
               <CardHeader>
                 <CardTitle>Profile Settings</CardTitle>
                 <CardDescription>Manage your account information</CardDescription>

@@ -165,7 +165,7 @@ export function StoreList() {
         {filteredAndSortedStores.map((store, index) => {
           const userRating = getUserRatingForStore(store.id)
           return (
-            <Card key={store.id} className="flex flex-col justify-between hover:shadow-lg transition-shadow duration-200">
+            <Card key={store.id} className="flex flex-col justify-between">
               <CardHeader>
                 <div className="flex items-start justify-between gap-2">
                   <CardTitle className="text-xl font-bold">{store.name}</CardTitle>
