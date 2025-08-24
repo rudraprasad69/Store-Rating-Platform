@@ -3,10 +3,12 @@ import { useAuth } from "@/contexts/auth-context"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { LogOut, Store, Star, User } from "lucide-react"
+import { LogOut, Store, Star, User, LayoutDashboard } from "lucide-react"
 import { StoreList } from "./store-list"
 import { UserProfile } from "./user-profile"
 import { MyRatings } from "./my-ratings"
+import { UserStats } from "./user-stats"
+import { RecentRatings } from "./recent-ratings"
 
 export function UserDashboard() {
   const { user, logout } = useAuth()
@@ -29,8 +31,12 @@ export function UserDashboard() {
 
       <div className="p-6">
         {/* Navigation Tabs */}
-        <Tabs defaultValue="stores" className="space-y-4">
+        <Tabs defaultValue="dashboard" className="space-y-4">
           <TabsList>
+            <TabsTrigger value="dashboard" className="flex items-center gap-2">
+              <LayoutDashboard className="h-4 w-4" />
+              Dashboard
+            </TabsTrigger>
             <TabsTrigger value="stores" className="flex items-center gap-2">
               <Store className="h-4 w-4" />
               Browse Stores
@@ -44,6 +50,14 @@ export function UserDashboard() {
               Profile
             </TabsTrigger>
           </TabsList>
+
+          <TabsContent value="dashboard">
+            <div className="space-y-4">
+              <UserStats />
+              <RecentRatings />
+              <Button>Rate a New Store</Button>
+            </div>
+          </TabsContent>
 
           <TabsContent value="stores">
             <Card>
