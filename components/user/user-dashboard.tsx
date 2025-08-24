@@ -1,14 +1,15 @@
-"use client"
-import { useAuth } from "@/contexts/auth-context"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { LogOut, Store, Star, User, LayoutDashboard } from "lucide-react"
-import { StoreList } from "./store-list"
-import { UserProfile } from "./user-profile"
-import { MyRatings } from "./my-ratings"
-import { UserStats } from "./user-stats"
-import { RecentRatings } from "./recent-ratings"
+'use client'
+import { useAuth } from '@/contexts/auth-context'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { LogOut, Store, Star, User, LayoutDashboard } from 'lucide-react'
+import { StoreList } from './store-list'
+import { UserProfile } from './user-profile'
+import { MyRatings } from './my-ratings'
+import { UserStats } from './user-stats'
+import { RecentRatings } from './recent-ratings'
+import { ModeToggle } from '@/components/ui/mode-toggle'
 
 export function UserDashboard() {
   const { user, logout } = useAuth()
@@ -22,10 +23,17 @@ export function UserDashboard() {
             <h1 className="text-2xl font-bold text-foreground">Store Rating Platform</h1>
             <p className="text-sm text-muted-foreground">Welcome back, {user?.name}</p>
           </div>
-          <Button variant="outline" onClick={logout} className="flex items-center gap-2 bg-transparent">
-            <LogOut className="h-4 w-4" />
-            Logout
-          </Button>
+          <div className="flex items-center gap-4">
+            <ModeToggle />
+            <Button
+              variant="outline"
+              onClick={logout}
+              className="flex items-center gap-2 bg-transparent dark:hover:bg-yellow-400"
+            >
+              <LogOut className="h-4 w-4" />
+              Logout
+            </Button>
+          </div>
         </div>
       </header>
 
