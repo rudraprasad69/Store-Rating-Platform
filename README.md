@@ -15,7 +15,7 @@
 ## 🚀 Live Demo
 
 A live version of the application is available here:
-**[https://your-live-demo-url.com](https://your-live-demo-url.com)**
+[**[https://your-live-demo-url.com](https://your-live-demo-url.com)**](https://store-rating-platform.netlify.app/)
 
 ## ✨ Key Features
 
