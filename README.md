@@ -37,7 +37,8 @@ This platform provides a role-based experience to cater to the needs of every us
 
 | User Dashboard                                | Store Owner View                               | Admin Panel                                   |
 | --------------------------------------------- | ---------------------------------------------- | --------------------------------------------- |
-| ![User View](path/to/user_screenshot.png) | ![Owner View](path/to/owner_screenshot.png) | ![Admin View](path/to/admin_screenshot.png) |
+| ![User View](path/to/user_screenshot.png) | ![Owner View](<img width="949" height="419" alt="{BBE7B323-BAE8-4517-92B9-08EC61051934}" src="https://github.com/user-attachments/assets/ed56170e-4a99-4040-bfb0-7e01b96fb926" />
+) | ![Admin View](path/to/admin_screenshot.png) |
 
 *(Action: Add screenshots of the different role-based dashboards to showcase the application's depth.)*
 
