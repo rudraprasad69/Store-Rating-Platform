@@ -12,10 +12,6 @@
 
 > A full-stack web application designed to allow users to rate and review various stores. It provides distinct functionalities for regular users, store owners, and administrators, creating a comprehensive ecosystem for managing and browsing store feedback.
 
-## 🚀 Live Demo
-
-A live version of the application is available here:
-[**[https://your-live-demo-url.com](https://your-live-demo-url.com)**](https://store-rating-platform.netlify.app/)
 
 ## ✨ Key Features
 
