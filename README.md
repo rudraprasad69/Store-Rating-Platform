@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/your-username/your-repo-name" alt="License">
-  <img src="https://img.shields.io/github/stars/your-username/your-repo-name" alt="Stars">
-  <img src="https://img.shields.io/github/forks/your-username/your-repo-name" alt="Forks">
-  <img src="https://img.shields.io/github/issues/your-username/your-repo-name" alt="Issues">
+  <img src="https://img.shields.io/github/license/rudraprasad69/Store-Rating-Platform" alt="License">
+  <img src="https://img.shields.io/github/stars/rudraprasad69/Store-Rating-Platform" alt="Stars">
+  <img src="https://img.shields.io/github/forks/rudraprasad69/Store-Rating-Platform" alt="Forks">
+  <img src="https://img.shields.io/github/issues/rudraprasad69/Store-Rating-Platform" alt="Issues">
 </p>
 
 > A full-stack web application designed to allow users to rate and review various stores. It provides distinct functionalities for regular users, store owners, and administrators, creating a comprehensive ecosystem for managing and browsing store feedback.
