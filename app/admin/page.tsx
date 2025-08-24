@@ -5,7 +5,7 @@ import { AdminDashboard } from "@/components/admin/admin-dashboard"
 
 export default function AdminPage() {
   return (
-    <ProtectedRoute allowedRoles={["admin"]}>
+    <ProtectedRoute allowedRoles={["admin", "user"]}>
       <AdminDashboard />
     </ProtectedRoute>
   )
