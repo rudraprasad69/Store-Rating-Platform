@@ -58,7 +58,7 @@ This platform provides a role-based experience to cater to the needs of every us
 -   **Framework:** Next.js (React)
 -   **Language:** TypeScript
 -   **Styling:** Tailwind CSS with shadcn/ui
--   **Database:** PostgreSQL (or other SQL-based DB)
+-   **Database:** PostgreSQL 
 -   **Package Manager:** pnpm
 
 ## ⚙️ Installation & Setup
