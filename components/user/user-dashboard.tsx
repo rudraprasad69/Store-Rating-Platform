@@ -63,7 +63,7 @@ export function UserDashboard() {
             <div className="space-y-6">
               <UserStats />
               <RecentRatings />
-              <Button className="w-full interactive-btn gradient-primary">Rate a New Store</Button>
+              
             </div>
           </TabsContent>
 
