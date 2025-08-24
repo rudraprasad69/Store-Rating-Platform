@@ -15,12 +15,12 @@ export function UserDashboard() {
   const { user, logout } = useAuth()
 
   return (
-    <div className="min-h-screen bg-background font-sans">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-10 border-b bg-card/80 backdrop-blur-lg">
+      <header className="border-b bg-card">
         <div className="flex h-16 items-center justify-between px-6">
           <div>
-            <h1 className="text-2xl font-bold gradient-text">Store Rating Platform</h1>
+            <h1 className="text-2xl font-bold text-foreground">Store Rating Platform</h1>
             <p className="text-sm text-muted-foreground">Welcome back, {user?.name}</p>
           </div>
           <div className="flex items-center gap-4">
@@ -28,7 +28,7 @@ export function UserDashboard() {
             <Button
               variant="outline"
               onClick={logout}
-              className="flex items-center gap-2 bg-transparent interactive-btn dark:hover:bg-yellow-400"
+              className="flex items-center gap-2 bg-transparent dark:hover:bg-yellow-400"
             >
               <LogOut className="h-4 w-4" />
               Logout
@@ -37,38 +37,38 @@ export function UserDashboard() {
         </div>
       </header>
 
-      <main className="p-6">
+      <div className="p-6">
         {/* Navigation Tabs */}
-        <Tabs defaultValue="dashboard" className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="dashboard" className="flex items-center gap-2 interactive-btn">
+        <Tabs defaultValue="dashboard" className="space-y-4">
+          <TabsList>
+            <TabsTrigger value="dashboard" className="flex items-center gap-2">
               <LayoutDashboard className="h-4 w-4" />
               Dashboard
             </TabsTrigger>
-            <TabsTrigger value="stores" className="flex items-center gap-2 interactive-btn">
+            <TabsTrigger value="stores" className="flex items-center gap-2">
               <Store className="h-4 w-4" />
               Browse Stores
             </TabsTrigger>
-            <TabsTrigger value="my-ratings" className="flex items-center gap-2 interactive-btn">
+            <TabsTrigger value="my-ratings" className="flex items-center gap-2">
               <Star className="h-4 w-4" />
               My Ratings
             </TabsTrigger>
-            <TabsTrigger value="profile" className="flex items-center gap-2 interactive-btn">
+            <TabsTrigger value="profile" className="flex items-center gap-2">
               <User className="h-4 w-4" />
               Profile
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="dashboard">
-            <div className="space-y-6">
+            <div className="space-y-4">
               <UserStats />
               <RecentRatings />
-              <Button className="w-full interactive-btn gradient-primary">Rate a New Store</Button>
+              <Button>Rate a New Store</Button>
             </div>
           </TabsContent>
 
           <TabsContent value="stores">
-            <Card className="card-hover">
+            <Card>
               <CardHeader>
                 <CardTitle>Browse Stores</CardTitle>
                 <CardDescription>Discover and rate stores in your area</CardDescription>
@@ -80,7 +80,7 @@ export function UserDashboard() {
           </TabsContent>
 
           <TabsContent value="my-ratings">
-            <Card className="card-hover">
+            <Card>
               <CardHeader>
                 <CardTitle>My Ratings</CardTitle>
                 <CardDescription>View and manage your store ratings</CardDescription>
@@ -92,7 +92,7 @@ export function UserDashboard() {
           </TabsContent>
 
           <TabsContent value="profile">
-            <Card className="card-hover">
+            <Card>
               <CardHeader>
                 <CardTitle>Profile Settings</CardTitle>
                 <CardDescription>Manage your account information</CardDescription>
@@ -103,7 +103,7 @@ export function UserDashboard() {
             </Card>
           </TabsContent>
         </Tabs>
-      </main>
+      </div>
     </div>
   )
 }
