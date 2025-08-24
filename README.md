@@ -34,7 +34,6 @@ This platform provides a role-based experience to cater to the needs of every us
 -   **Platform Oversight:** A comprehensive dashboard to oversee all platform activity.
 
 
-*(Action: Add screenshots of the different role-based dashboards to showcase the application's depth.)*
 
 ## 🛠️ Tech Stack
 
