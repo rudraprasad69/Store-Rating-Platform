@@ -1,8 +1,7 @@
 # Store Rating Platform
 
-<p align="center">
-  <img src="path/to/your/store-rating-banner.png" alt="Store Rating Platform Banner" width="800">
-</p>
+<img width="960" height="540" alt="{D457DD03-022D-4A15-865F-4EE39EA52239}" src="https://github.com/user-attachments/assets/25ba9de7-1e98-4de2-9fc9-d4e9664f5d26" />
+
 
 <p align="center">
   <img src="https://img.shields.io/github/license/rudraprasad69/Store-Rating-Platform" alt="License">
