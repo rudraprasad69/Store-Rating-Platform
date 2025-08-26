@@ -242,6 +242,11 @@
   .animated-border:hover::before {
     left: 100%;
   }
+
+  [data-slot="card"]:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
 }
 
 @keyframes wave1 {
