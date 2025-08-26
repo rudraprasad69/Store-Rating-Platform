@@ -163,7 +163,7 @@ export function MyRatings() {
           if (!store) return null
 
           return (
-            <Card key={rating.id}>
+            <Card key={rating.id} className="hover:transform-none hover:shadow-none">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
