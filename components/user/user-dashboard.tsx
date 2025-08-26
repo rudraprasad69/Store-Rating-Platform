@@ -68,7 +68,7 @@ export function UserDashboard() {
           </TabsContent>
 
           <TabsContent value="stores">
-            <Card>
+            <Card className="hover:transform-none hover:shadow-none">
               <CardHeader>
                 <CardTitle>Browse Stores</CardTitle>
                 <CardDescription>Discover and rate stores in your area</CardDescription>
@@ -80,7 +80,7 @@ export function UserDashboard() {
           </TabsContent>
 
           <TabsContent value="my-ratings">
-            <Card>
+            <Card className="hover:transform-none hover:shadow-none">
               <CardHeader>
                 <CardTitle>My Ratings</CardTitle>
                 <CardDescription>View and manage your store ratings</CardDescription>
@@ -92,7 +92,7 @@ export function UserDashboard() {
           </TabsContent>
 
           <TabsContent value="profile">
-            <Card>
+            <Card className="hover:transform-none hover:shadow-none">
               <CardHeader>
                 <CardTitle>Profile Settings</CardTitle>
                 <CardDescription>Manage your account information</CardDescription>
