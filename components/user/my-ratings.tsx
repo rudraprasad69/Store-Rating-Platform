@@ -163,7 +163,7 @@ export function MyRatings() {
           if (!store) return null
 
           return (
-            <Card key={rating.id}>
+            <Card key={rating.id} className="hover:transform-none hover:shadow-none">
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
@@ -187,7 +187,7 @@ export function MyRatings() {
                       variant="outline"
                       size="sm"
                       onClick={() => initiateDeleteRating(rating.id)}
-                      className="flex items-center gap-1 text-destructive hover:text-destructive"
+                      className="flex items-center gap-1 text-destructive"
                     >
                       <Trash2 className="h-3 w-3" />
                       Delete

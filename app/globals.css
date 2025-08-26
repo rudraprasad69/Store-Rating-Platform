@@ -142,10 +142,7 @@
     background: var(--primary);
   }
 
-  /* Card hover animations */
-  .card-hover {
-    @apply transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-primary/20;
-  }
+  
 
   /* Button hover animations */
   .btn-hover {
@@ -244,6 +241,11 @@
 
   .animated-border:hover::before {
     left: 100%;
+  }
+
+  [data-slot="card"]:hover {
+    transform: none !important;
+    box-shadow: none !important;
   }
 }
 
