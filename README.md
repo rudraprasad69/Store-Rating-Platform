@@ -1,5 +1,3 @@
-# Store Rating Platform
-
 <img width="960" height="540" alt="{D457DD03-022D-4A15-865F-4EE39EA52239}" src="https://github.com/user-attachments/assets/25ba9de7-1e98-4de2-9fc9-d4e9664f5d26" />
 
 
