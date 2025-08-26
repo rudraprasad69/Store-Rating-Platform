@@ -201,7 +201,7 @@
 
   /* Glow effect */
   .glow-hover {
-    @apply transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-primary/50;
+    @apply transition-none hover:shadow-2xl hover:shadow-primary/75;
   }
 
   /* Rotate on hover */
